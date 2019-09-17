@@ -1,0 +1,20 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+int main() 
+{ 
+int a, b, c; 
+cout « "Vvedite znacheniya peremennykh \n"; 
+cin » a » b » c; 
+if (a*a + b*b == c*c) 
+cout « "Dannyy treugol'nik - pryamougol'nyy" ; 
+else 
+if (a*a == b*b + c*c) 
+cout « "Dannyy treugol'nik - pryamougol'nyy" ; 
+else 
+if (a*a + c*c == b*b) 
+cout « "Dannyy treugol'nik - pryamougol'nyy" ; 
+else 
+cout « "Dannyy treugol'nik - ne pryamougol'nyy" ; 
+return 0; 
+}
