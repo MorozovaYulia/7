@@ -1,0 +1,20 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+int main() 
+{ 
+int A; 
+cout « "Vvedite znacheniye peremennoy \n"; 
+cin » A; 
+int b = A / 100; 
+int c = (A - b*100) / 10; 
+int d = A % 10; 
+if (b < c < d) 
+cout « "Tsifry dannogo chisla obrazuyut vozrastayushchuyu posledovatel'nost'" ; 
+else 
+if (b > c > d) 
+cout « "Tsifry dannogo chisla obrazuyut ubyvayushchuyu posledovatel'nost'"; 
+else 
+cout « "Tsifry dannogo chisla ne obrazuyut vozrastayushchuyu ili ubyvayushchuyu posledovatel'nost'"; 
+return 0; 
+}
