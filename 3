@@ -3,14 +3,13 @@
 using namespace std; 
 int main() 
 { 
-int A; 
-cout « "Vvedite znacheniye peremennoy"; 
-cin » A; 
-int b = A / 100; 
-int c = A % 2; 
-if (b < 1 and c == 0) 
-cout « "Dannoye chislo yavlyayetsya dvuznachnym i polozhitel'nym" ; 
-else 
-cout « "Dannoye chislo ne yavlyayetsya dvuznachnym i polozhitel'nym"; 
-return 0; 
+  int A; 
+  cout << "Enter A"; 
+  cin >> A; 
+  int b = A / 100; 
+  int c = A % 2; 
+  if (b < 1 and c == 0) 
+    cout << "the number is two digit and positive" ; 
+  else 
+    cout << "the number isn't two digit and positive"; 
 }
