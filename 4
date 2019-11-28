@@ -3,18 +3,17 @@
 using namespace std; 
 int main() 
 { 
-int A; 
-cout « "Vvedite znacheniye peremennoy \n"; 
-cin » A; 
-int b = A / 100; 
-int c = (A - b*100) / 10; 
-int d = A % 10; 
-if (b < c < d) 
-cout « "Tsifry dannogo chisla obrazuyut vozrastayushchuyu posledovatel'nost'" ; 
-else 
-if (b > c > d) 
-cout « "Tsifry dannogo chisla obrazuyut ubyvayushchuyu posledovatel'nost'"; 
-else 
-cout « "Tsifry dannogo chisla ne obrazuyut vozrastayushchuyu ili ubyvayushchuyu posledovatel'nost'"; 
-return 0; 
+  int A; 
+  cout « "Enter the number \n"; 
+  cin >> A; 
+  int b = A / 100; 
+  int c = (A - b*100) / 10; 
+  int d = A % 10; 
+  if (b < c < d) 
+    cout << "The numbers of this number form an increasing sequence" ; 
+  else 
+    if (b > c > d) 
+      cout << "The numbers of this number form a decreasing sequence"; 
+    else 
+      cout << "The numbers of this number do not form a sequence"; 
 }
