@@ -3,16 +3,15 @@
 using namespace std; 
 int main() 
 { 
-int A; 
-cout « "Vvedite znacheniye peremennoy \n"; 
-cin » A; 
-int b = A / 1000; 
-int c = (A - b*1000) / 100; 
-int d = (A - b*1000 - c*100) / 10; 
-int e = A % 10; 
-if (b == e and c == d) 
-cout « "Dannoye chislo chitayetsya odinakovo sleva napravo i sprava nalevo" ; 
-else 
-cout « "Dannoye chislo ne chitayetsya odinakovo sleva napravo i sprava nalevo"; 
-return 0; 
+  int A; 
+  cout << "Enter the number \n"; 
+  cin >> A; 
+  int b = A / 1000; 
+  int c = (A - b*1000) / 100; 
+  int d = (A - b*1000 - c*100) / 10; 
+  int e = A % 10; 
+  if (b == e and c == d) 
+    cout << "This number is a palindrome" ; 
+  else 
+    cout << "This number is not a palindrome"; 
 }
